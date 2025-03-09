@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import { Sun, Moon, Menu, X, Laptop } from 'lucide-react';
 
 const Navbar = ({ isDarkMode, toggleDarkMode, isMenuOpen, setIsMenuOpen }) => {
@@ -60,11 +60,5 @@ const Navbar = ({ isDarkMode, toggleDarkMode, isMenuOpen, setIsMenuOpen }) => {
   );
 };
 
-Navbar.propTypes = {
-  isDarkMode: PropTypes.bool.isRequired,
-  toggleDarkMode: PropTypes.func.isRequired,
-  isMenuOpen: PropTypes.bool.isRequired,
-  setIsMenuOpen: PropTypes.func.isRequired
-};
 
 export default Navbar;
